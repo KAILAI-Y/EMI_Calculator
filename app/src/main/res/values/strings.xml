@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EMI_Calculator</string>
+    <string name="calculate">Calculate</string>
+    <string name="principle_amount">Mortgage principle amount</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="interest_rate">Interest rate %</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="enter_interest_rate">Enter Interest rate</string>
+    <string name="amortization_period_year">Amortization period (year)</string>
+    <string name="enter_year">Enter year</string>
+    <string name="payment_frequency_monthly">* Payment Frequency: Monthly</string>
+    <string name="monthly">/Monthly</string>
+    <string name="EMI">$ </string>
+    <string name="result">/Monthly</string>
+    <string name="enter_principle">Enter Principle</string>
+
+</resources>
