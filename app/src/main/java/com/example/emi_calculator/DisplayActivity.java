@@ -2,13 +2,38 @@ package com.example.emi_calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
-public class DisplayActivity extends AppCompatActivity {
+import java.text.DecimalFormat;
+
+public class DisplayActivity<Textview> extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display);
+        Intent intent=getIntent();
+        String message= intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        TextView textview = (TextView) findViewById(R.id.emi_result);
+        textview.setText(message);
+
+        Button back = (Button) findViewById(R.id.button_back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DisplayActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 }
